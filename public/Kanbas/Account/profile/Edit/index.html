@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Profile</title>
+</head>
+<body>
+
+<h1>Jose Annunziato</h1>
+
+<form action="/submit-profile" method="post">
+  <label for="name">Name:*</label>
+  <input type="text" id="name" name="name" value="Jose Annunziato" required>
+
+  <label for="pronouns">Pronouns:</label>
+  <select id="pronouns" name="pronouns">
+    <option value="none" selected>None</option>
+    <!-- Add other pronoun options here -->
+  </select><br><br>
+
+  <label for="title">Title:</label>
+  <input type="text" id="title" name="title"><br><br>
+
+  <h2>Contact</h2>
+  <p>No registered services, you can add some on the <a href="/settings" class="settings-link">settings</a> page.</p>
+  
+  
+  <h2>Biography</h2>
+  <label>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</label> <br>
+  <textarea id="biography" name="biography" rows="4" cols="50">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea><br><br>
+
+
+
+
+
+
+
+  
+  
+  <h2>Links</h2>
+  <ul>
+    <li class="link-item">
+      <a href="https://www.youtube.com" target="_blank" class="external-link-icon">YouTube</a>
+      Links to an external site.
+    </li>
+  </ul>
+  
+  <form action="/add-link" method="post">
+    <label for="linkTitle">Title</label>
+    
+    
+    <input type="text" id="linkTitle" name="linkTitle" value="YouTube" class="input-field">
+  
+    <span>→</span>
+  
+    <label for="linkUrl">URL</label>
+    <input type="url" id="linkUrl" name="linkUrl" value="https://www.youtube.com" class="input-field">
+    <a href="#">Remove</a> <br>
+  
+    <button type="button" class="button" onclick="addLink()">Add another link</button> <br>
+    <button class="button" onclick="cancel()">Cancel</button>
+    <button type="submit" class="button button-primary">Save Profile</button>
+  </form>
+  
+  <button class="button" onclick="editProfile()">Edit Profile</button>
+  <button class="button" onclick="cancelEditing()">Cancel Editing</button>
+
+
+</form>
+
+</body>
+</html>

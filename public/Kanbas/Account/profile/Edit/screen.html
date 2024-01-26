@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grades Screen</title>
+    <!-- Add any additional styles or scripts here -->
+</head>
+<body>
+    <table>
+        <tr>
+            <!-- First Column: Kanbas Navigation -->
+            <td style="vertical-align: top;">
+                    <aside id="kanbas-navigation">
+                        <ul>
+                            <li><a href="../../Account/profile/screen.html">Account</a></li>
+                            <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+                            <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+                            <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
+                            <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
+                            <li><a href="/Kanbas/History/index.html">History</a></li>
+                            <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
+                            <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
+                            <li><a href="/Kanbas/Help/index.html">Help</a></li>
+                        </ul>
+                    </aside>
+                  
+            </td>
+            
+            <!-- Second Column: Course Navigation -->
+            <td style="vertical-align: top;">
+                <ul class="styled-list">
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Notifications</a></li>
+                    <li><a href="../../Account/profile/screen.html">Profile</a></li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Files</a></li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Settings</a></li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">ePortfolios</a></li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Shared Content</a></li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">The Hub</a></li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Qwickly Course Tools</a></li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Global Announcements</a></li>
+                  </ul>
+                </td>
+            
+                <!-- Third Column: Grades -->
+                <td>
+
+<h1>Jose Annunziato</h1>
+
+
+  <label for="name">Name:*</label>
+  <input type="text" id="name" name="name" value="Jose Annunziato" required>
+
+  <label for="pronouns">Pronouns:</label>
+  <select id="pronouns" name="pronouns">
+    <option value="none" selected>None</option>
+    <!-- Add other pronoun options here -->
+  </select><br><br>
+
+  <label for="title">Title:</label>
+  <input type="text" id="title" name="title"><br><br>
+
+  <h2>Contact</h2>
+  <p>No registered services, you can add some on the <a href="/settings" class="settings-link">settings</a> page.</p>
+  
+  
+  <h2>Biography</h2>
+  <label>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</label> <br>
+  <textarea id="biography" name="biography" rows="4" cols="50">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea><br><br>
+
+
+
+
+
+
+
+  
+  
+  <h2>Links</h2>
+  <ul>
+    <li class="link-item">
+      <a href="https://www.youtube.com" target="_blank" class="external-link-icon">YouTube</a>
+      Links to an external site.
+    </li>
+  </ul>
+  
+  <form action="/add-link" method="post">
+    <label for="linkTitle">Title</label>
+    
+    
+    <input type="text" id="linkTitle" name="linkTitle" value="YouTube" class="input-field">
+  
+    <span>→</span>
+  
+    <label for="linkUrl">URL</label>
+    <input type="url" id="linkUrl" name="linkUrl" value="https://www.youtube.com" class="input-field">
+    <a href="#">Remove</a> <br>
+  
+    <button type="button" class="button" onclick="addLink()">Add another link</button> <br>
+    <button class="button" onclick="cancel()">Cancel</button>
+    <button type="submit" class="button button-primary">Save Profile</button>
+  </form>
+  
+  <button class="button" onclick="editProfile()">Edit Profile</button>
+  
+  <form action="../../Account/profile/screen.html">
+    <button class="button" onclick="cancelEditing()">Cancel Editing</button>
+  </form>
+  
+
+
+</form>
+
+</body>
+</html>

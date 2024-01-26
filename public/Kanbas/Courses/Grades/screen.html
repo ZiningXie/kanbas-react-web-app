@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grades Screen</title>
+    <!-- Add any additional styles or scripts here -->
+</head>
+<body>
+    <table>
+        <tr>
+            <!-- First Column: Kanbas Navigation -->
+            <td style="vertical-align: top;">
+                    <aside id="kanbas-navigation">
+                        <ul>
+                            <li><a href="../../Account/profile/screen.html">Account</a></li>
+                            <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+                            <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+                            <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
+                            <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
+                            <li><a href="/Kanbas/History/index.html">History</a></li>
+                            <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
+                            <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
+                            <li><a href="/Kanbas/Help/index.html">Help</a></li>
+                        </ul>
+                    </aside>
+                  
+            </td>
+            
+            <!-- Second Column: Course Navigation -->
+            <td style="vertical-align: top;">
+                <aside id="course-navigation">
+                    <ul>
+                        <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                        <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                        <li><a href="/Kanbas/Courses/Piazza/index.html">Piazza</a></li>
+                        <li><a href="/Kanbas/Courses/zoom-meetings/index.html">Zoom Meetings</a></li>
+                        <li><a href="../../Courses/Assignments/screen.html">Assignments</a></li>
+                        <li><a href="/Kanbas/Courses/Quizzes/index.html">Quizzes</a></li>
+                        <li><a href="../../Courses/Grades/screen.html">Grades</a></li>
+                        <li><a href="/Kanbas/Courses/People/index.html">People</a></li>
+                        <li><a href="/Kanbas/Courses/panopto-video/index.html">Panopto Video</a></li>
+                        <li><a href="/Kanbas/Courses/Discussions/index.html">Discussions</a></li>
+                        <li><a href="/Kanbas/Courses/Announcements/index.html">Announcements</a></li>
+                        <li><a href="/Kanbas/Courses/Pages/index.html">Pages</a></li>
+                        <li><a href="/Kanbas/Courses/Files/index.html">Files</a></li>
+                        <li><a href="/Kanbas/Courses/Rubrics/index.html">Rubrics</a></li>
+                        <li><a href="/Kanbas/Courses/Outcomes/index.html">Outcomes</a></li>
+                        <li><a href="/Kanbas/Courses/Collaborations/index.html">Collaborations</a></li>
+                        <li><a href="/Kanbas/Courses/Syllabus/index.html">Syllabus</a></li>
+                        <li><a href="/Kanbas/Courses/Settings/index.html">Settings</a></li>
+                    </ul>
+                </aside>           
+            </td>
+            
+            <!-- Third Column: Grades -->
+            <td>
+                <select>
+                    <option>Gradebook</option>
+                    <!-- other options -->
+                </select>
+                <!-- Buttons and Search Fields -->
+                <button>Import</button>
+                <select>
+                    <option>Export</option>
+                    <!-- other options -->
+                </select>
+                <button>Configure</button>
+                <br>
+                <h3>Student Names</h3>
+                <input type="search" id="student-search" name="student-search" placeholder="Search Students">
+                <br>
+                <h3>Assignment Names</h3>
+                <input type="search" id="assignment-search" name="assignment-search" placeholder="Search Assignments">
+                <br>
+                <button>Apply Filters</button>
+                <br>
+                
+                <!-- Grades Table -->
+                <table border="1"> <!-- You can remove the border attribute later when applying CSS -->
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>A1 SETUP<br>Out of 100</th>
+                            <th>A2 HTML<br>Out of 100</th>
+                            <th>A3 CSS<br>Out of 100</th>
+                            <th>A4 BOOTSTRAP<br>Out of 100</th>
+                            <th>A5 JAVASCRIPT<br>Out of 100</th>
+                            <th>A6 REACT<br>Out of 100</th>
+                            <th>A7 REDUX<br>Out of 100</th>
+                            <th>A8 NODE<br>Out of 100</th>
+                            <th>A9 MONGO<br>Out of 100</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Princes Leia</td>
+                            <td>98</td>
+                            <td>80</td>
+                            <td>87</td>
+                            <td>86</td>
+                            <td>100</td>
+                            <td>94</td>
+                            <td>85</td>
+                            <td>84</td>
+                            <td>92</td>
+                        </tr>
+                        <tr>
+                            <td>Admiral Ackbar</td>
+                            <td>82</td>
+                            <td>88</td>
+                            <td>95</td>
+                            <td>100</td>
+                            <td>93</td>
+                            <td>98</td>
+                            <td>85</td>
+                            <td>87</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Wonderland</td>
+                            <td>98</td>
+                            <td>89</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>89</td>
+                            <td>94</td>
+                            <td>88</td>
+                            <td>87</td>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
+                </table>           
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

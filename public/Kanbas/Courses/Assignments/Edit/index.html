@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta>
+<title>Assignment Creation Form</title>
+</head>
+<body>
+    <select id="speedGrader">
+        <option value="SpeedGrader">SpeedGrader</option>
+        <option value="option2">Option 2</option>
+    </select>
+  <h3 for="assignmentName">Assignment Name</h3>
+  <input type="text" id="assignmentName" name="assignmentName" placeholder="A1 - ENV + HTML"><br><br>
+
+  <textarea id="assignmentDescription" name="assignmentDescription" placeholder="This is the assignment description." rows="4" cols="50"></textarea><br><br>
+
+  <label for="points">Points</label><br>
+  <input type="text" id="points" name="points"><br><br>
+
+  <label for="assignmentGroup">Assignment Group</label> <br>
+  <select id="assignmentGroup" name="assignmentGroup">
+    <option value="Assignments">Assignments</option>
+    <option value="option2">Option 2</option>
+  </select><br><br>
+
+  <label for="displayGrade">Display Grade as</label> <br>
+  <select id="displayGrade" name="displayGrade">
+    <option value="Percentage">Percentage</option>
+    <option value="option2">Option 2</option>
+  </select><br><br>
+
+  <label for="submissionType">Submission Type</label> <br>
+  <select id="submissionType" name="submissionType">
+    <option value="submissionType">submissionType</option>
+    <option value="option2">Option 2</option>
+  </select><br><br>
+
+
+    <legend>Online Entry Options</legend>
+    <input type="checkbox" id="textEntry" name="onlineEntryOptions" value="TextEntry">
+    <label for="textEntry">Text Entry</label><br>
+
+    <input type="checkbox" id="websiteURL" name="onlineEntryOptions" value="WebsiteURL">
+    <label for="websiteURL">Website URL</label><br>
+
+    <input type="checkbox" id="mediaRecordings" name="onlineEntryOptions" value="MediaRecordings">
+    <label for="mediaRecordings">Media Recordings</label><br>
+
+    <input type="checkbox" id="studentAnnotation" name="onlineEntryOptions" value="StudentAnnotation">
+    <label for="studentAnnotation">Student Annotation</label><br>
+
+    <input type="checkbox" id="fileUploads" name="onlineEntryOptions" value="FileUploads">
+    <label for="fileUploads">File Uploads</label><br>
+  <br>
+
+  <label for="assign">Assign</label> <br>
+  <label for="assignTo">Assign to</label> <br>
+  <input type="text" id="assignTo" name="assignTo" value="Everyone"><br><br>
+
+  <label for="due">Due</label> <br>
+  <input type="date" id="due" name="due"><br><br>
+
+  <label for="availableFrom">Available from</label> <br>
+  <input type="date" id="availableFrom" name="availableFrom"><br><br>
+
+  <label for="until">Until</label> <br>
+  <input type="date" id="until" name="until"><br><br>
+
+  <button type="submit" name="action" value="cancel">Cancel</button> <br>
+  <button type="submit" name="action" value="save">Save</button>
+</form>
+</body>
+</html>
