@@ -1,0 +1,40 @@
+/* Styles for the Kanbas Dashboard layout */
+.course-card {
+  width: 100%; /* Ensure the card is responsive within the grid */
+  max-width: 400px; /* Maximum width of the course card */
+  min-width: 250px; /* Minimum width of the course card */
+  margin: 20px auto; /* Centers the card within the column with vertical spacing */
+}
+
+/* Spacing between the cards */
+.g-3 {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.g-3 > .col {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Ensuring the white spacing between cards is consistent */
+.row-cols-1 > * {
+  padding-bottom: 30px;
+}
+
+/* Adjustments for when the sidebar is present */
+@media (min-width: 992px) {
+  .kanbas-sidebar + .kanbas-content {
+    margin-left: 30px; /* Spacing between the sidebar and content */
+  }
+}
+
+/* Styles for the active dashboard link in the sidebar */
+.wd-kanbas-navigation .wd-active {
+  background-color: white;
+  color: red; /* Red text for the active link */
+}
+
+.wd-kanbas-navigation .wd-active .fa {
+  color: red; /* Red icon for the active link */
+}

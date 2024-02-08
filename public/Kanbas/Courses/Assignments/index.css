@@ -1,0 +1,23 @@
+.list-group-item {
+    border-radius: 0;
+}
+
+.list-group-item:first-child {
+    border-left: 4px solid green;
+}
+
+.breadcrumb {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: #000;
+}
+
+/* Additional styling for buttons and form inputs as needed */
+.btn {
+    margin-left: 5px;
+}
+

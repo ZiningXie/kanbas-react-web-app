@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Screen</title>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
+    <div class="d-flex">
+        <div class="d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
     <table style="width:100%;">
         <tr>
             <!-- Kanbas Navigation -->
             <td style="vertical-align: top;">
 
                     <title>Kanbas Navigation</title>
-
                     <aside id="kanbas-navigation">
                         <ul>
                             <li><a href="../../Account/profile/screen.html">Account</a></li>
@@ -27,35 +36,31 @@
                         </ul>
                     </aside>               
             </td>
+        </div>
+        <div class="d-none d-md-block">
 
             <!-- Course Navigation -->
-            <td style="vertical-align: top;">
-                    <title>Course Navigation</title>
-                    <aside id="course-navigation">
-                        <ul>
-                            <li><a href="/home">Home</a></li>
-                            <li><a href="/modules">Modules</a></li>
-                            <li><a href="/piazza">Piazza</a></li>
-                            <li><a href="/zoom-meetings">Zoom Meetings</a></li>
-                            <li><a href="../../Courses/Assignments/screen.html">Assignments</a></li>
-                            <li><a href="/quizzes">Quizzes</a></li>
-                            <li><a href="../../Courses/Grades/screen.html">Grades</a></li>
-                            <li><a href="/people">People</a></li>
-                            <li><a href="/panopto-video">Panopto Video</a></li>
-                            <li><a href="/discussions">Discussions</a></li>
-                            <li><a href="/announcements">Announcements</a></li>
-                            <li><a href="/pages">Pages</a></li>
-                            <li><a href="/files">Files</a></li>
-                            <li><a href="/rubrics">Rubrics</a></li>
-                            <li><a href="/outcomes">Outcomes</a></li>
-                            <li><a href="/collaborations">Collaborations</a></li>
-                            <li><a href="/syllabus">Syllabus</a></li>
-                            <li><a href="/settings">Settings</a></li>
-                        </ul>
-                    </aside>               
-            </td>
+                <ul class="wd-navigation">
+                  <li>
+                    <a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                  <li class="wd-active">
+                    <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                  </li>
+                  <li><a href="http://piazza.com">Piazza</a></li>
+                  <li><a href="#">Zoom</a></li>
+                  <li>
+                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                  </li>
+                  <li><a href="#">Quizzes</a></li>
+                  <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                  <li><a href="#">People</a></li>
+                </ul>
+        </div>
+
 
             <!-- Home Content -->
+            <div class="flex-fill">
+                <ul class="list-group wd-modules">
             <td style="vertical-align: top;">
                     <title>Course Home Page</title>
                     <table >
@@ -142,6 +147,8 @@
                         </tr>
                     </table>              
             </td>
+                </ul>
+            </div>
         </tr>
     </table>
 </body>
