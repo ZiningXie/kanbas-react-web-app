@@ -1,42 +1,41 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import courses from "../Database/courses.json";
+import { Link } from "react-router-dom";
 import "./index.css";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 function Dashboard() {
-  console.log(courses);
   return (
-    <div className="p-4">
-      <h1>Dashboard</h1> <hr />
-      <h2>Published Courses (12)</h2> <hr />
-      <div className="row">
-        <div className="row row-cols-1 row-cols-md-5 g-4">
+    <div>
+      <h1>Dashboard</h1>
+      <hr />
+      <div className="ml-5">
+        <h2>Published Courses ({courses.length})</h2>
+      </div>
+
+      <div className="main-content p-4">
+        <div className="row">
           {courses.map((course) => (
-            <div key={course._id} className="col" style={{ width: 300 }}>
-              <div className="card">
-                <img
-                  src={`/images/${course.image}`}
-                  className="card-img-top"
-                  style={{ height: 150 }}
-                />
+            <div key={course._id} className="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div className="card h-100 card-spacing">
+                <div className="card-image">
+                  <BsThreeDotsVertical
+                    className="card-icon"
+                    style={{ color: "white" }}
+                  />
+                </div>
                 <div className="card-body">
+                  <h5 className="card-title">{course.name}</h5>
+                  <p className="card-text">{course.number}</p>
+                  <p className="card-text">
+                    {course.startDate} - {course.endDate}
+                  </p>
                   <Link
-                    className="card-title"
-                    to={`/Kanbas/Courses/${course._id}/Home`}
-                    style={{
-                      textDecoration: "none",
-                      color: "navy",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {course.name}{" "}
-                  </Link>
-                  <p className="card-text">{course.name}</p>
-                  <Link
-                    to={`/Kanbas/Courses/${course._id}/Home`}
+                    key={course._id}
+                    to={`/Kanbas/Courses/${course._id}`}
                     className="btn btn-primary"
                   >
-                    Go{" "}
+                    View Course
                   </Link>
                 </div>
               </div>
@@ -47,4 +46,5 @@ function Dashboard() {
     </div>
   );
 }
+
 export default Dashboard;
