@@ -1,6 +1,7 @@
 .card {
-    width: 290px;
-    height: 260px;
+    min-width: 290px; /* Minimum width instead of fixed width */
+    max-width: 100%; /* Maximum width */
+    min-height: 260px; /* Minimum height */
     position: relative;
     overflow: hidden; 
 }
@@ -24,9 +25,9 @@
 }
 
 .card-body {
-    height: 104px;
     padding-top: 10px;
     padding-bottom: 10px;
+    overflow-y: auto; /* Add scrollbar if content is too long */
 }
 
 .card-title {
@@ -49,4 +50,5 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1; /* Allow the cards to grow */
 }
